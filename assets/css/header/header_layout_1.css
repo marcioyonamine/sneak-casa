@@ -51,6 +51,7 @@
 	text-align:center; 
 	position:relative; 
 	width:100%;
+	background:#FFF;
 }
 
 body.menubar .suevafree-menu:before {

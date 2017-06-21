@@ -22,19 +22,21 @@ if (!function_exists('suevafree_post_details_function')) {
 		
 			<div class="entry-info">
 		   
-				<span><i class="fa fa-clock-o"></i><?php echo get_the_date(); ?></span>
+				<!--<span><i class="fa fa-clock-o"></i><?php echo get_the_date(); ?></span>-->
                 
 				<?php 
 				
 					if ( ( !suevafree_setting('suevafree_view_comments') || suevafree_setting('suevafree_view_comments') == "on" ) && comments_open() ) : ?>
                     
-                        <span> <i class="fa fa-comments-o"></i>
+                       <!-- <span> <i class="fa fa-comments-o"></i>
                             <?php echo comments_number( '<a href="'.get_permalink($post->ID).'#respond">'.__( "0 comments","suevafree").'</a>', '<a href="'.get_permalink($post->ID).'#comments">1 '.__( "comment","suevafree").'</a>', '<a href="'.get_permalink($post->ID).'#comments">% '.__( "comments","suevafree").'</a>' ); ?>
                         </span>
                     
 						<?php echo suevafree_posticon();  ?>
+                        -->
                     
                     	<span> <i class="fa fa-tags"></i><?php the_category(', '); ?></span>
+                        <!--
                     	<?php if ( suevafree_setting('suevafree_view_author') == "on" ) : ?>
                         <span> <i class="fa fa-user"></i><?php the_author_posts_link(); ?></span>
     
@@ -45,7 +47,7 @@ if (!function_exists('suevafree_post_details_function')) {
 				endif; 
 					
 				?>
-
+				-->
 			</div>
 	
 		</div>
